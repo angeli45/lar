@@ -5,9 +5,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.lar</groupId>
-    <artifactId>DopTask1</artifactId>
+    <artifactId>DopTask2</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>DopTask1</name>
+    <name>DopTask2</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -60,7 +60,7 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>com.lar.doptask1/com.lar.doptask1.HelloApplication</mainClass>
+                            <mainClass>com.lar.doptask2/com.lar.doptask2.HelloApplication</mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
                             <jlinkImageName>app</jlinkImageName>

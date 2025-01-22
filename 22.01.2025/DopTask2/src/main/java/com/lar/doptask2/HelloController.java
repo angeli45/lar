@@ -1,4 +1,4 @@
-package com.lar.doptask1;
+package com.lar.doptask2;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
