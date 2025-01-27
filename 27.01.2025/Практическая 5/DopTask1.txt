@@ -1,0 +1,10 @@
+@startuml
+:ввод k;
+:ввод n;
+:r=0;
+while(i=1;i<=n;i++)is(да)
+:r=r+pow(i,k);
+endwhile
+:вывод v;
+stop
+@enduml

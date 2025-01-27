@@ -1,0 +1,19 @@
+@startuml
+start
+:**ввод** p;
+:vkl=1000;
+:s=vkl;
+:m=0;
+if(0<p && p>25) then (да)
+:e=getFac(n);
+while (s<=1100)
+:s=s+s*p/100;
+:m++;
+endwhile
+:**вывод** m;
+:**вывод** s;
+else (нет)
+:**вывод** Неверный процент;
+endif
+stop
+@enduml

@@ -1,0 +1,16 @@
+@startuml
+:ввод a;
+:ввод b;
+:r=0;
+while(i=a;i<=b;i++)is(да)
+if(i<=b)then(да)
+:r=r+i;
+endif
+endwhile
+if(r!=0)
+:вывод r;
+else (нет)
+:вывод Ошибка;
+endif
+stop
+@enduml

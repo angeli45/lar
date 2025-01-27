@@ -1,0 +1,15 @@
+@startuml
+start
+:**ввод** x;
+:**ввод** y;
+if(pow(x, 2) + pow(y, 2) < pow(10,2) && y > -x) then(да)
+:**вывод** Да;
+else(нет)
+if (pow(x, 2) + pow(y, 2) > 10 && y < -x) then (да)
+:**вывод** Нет;
+else (нет)
+:**вывод** На грани;
+endif
+endif
+stop
+@enduml

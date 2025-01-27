@@ -1,0 +1,23 @@
+@startuml
+start
+:**ввод** n;
+if(0>n || n<1000) then (да)
+if(n%2==0) then(да)
+:s= Чётное;
+else (нет)
+:s= Нечётное;
+endif
+if (n>99) then (да)
+:s=s+трёхзначное число;
+else (нет)
+if (т>9) then (да)
+:s=s+двузначное число;
+else (нет)
+:s=s+однозначное число;
+endif
+endif
+else (нет)
+:**Вывод** неправильные данные;
+endif
+stop
+@enduml

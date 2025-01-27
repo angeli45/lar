@@ -1,0 +1,11 @@
+@startuml
+start
+:**ввод** n1;
+:**ввод** n2;
+if(n1>n2) then(да)
+:**вывод** n1;
+else(нет)
+:**вывод** n2;
+endif
+stop
+@enduml

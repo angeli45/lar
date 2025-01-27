@@ -1,0 +1,9 @@
+@startuml
+start
+:**ввод** n1;
+:**ввод** n2;
+:**ввод** n3;
+:**вывод** max(n1, max(n2, n3));
+:**вывод** min(n1, min(n2, n3));
+stop
+@enduml

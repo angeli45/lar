@@ -1,0 +1,65 @@
+@startuml
+start
+:**ввод** M;
+:s=N/10;
+:d=N/10%10;
+:e=n%10;
+if (d == 1) then (да)
+switch (e)
+case (1)
+:res += "одиннадцать";
+case (2)
+:res += "двенадцать";
+case (3)
+:res += "тринадцать";
+case (4)
+:rez= "четырнадцать";
+case (5)
+:res += "пятнадцать";
+case (6)
+:res += "шестнадцать";
+case (7)
+:res += "семьнадцать";
+case (8)
+:res += "восемьнадцать";
+case (9)
+:res += "девятнадцать";
+endswitch
+else (нет)
+switch (d)
+case (2)
+:res += "двадцать";
+case (3)
+:res += "тридцать";
+case (4)
+:res += "сорок";
+endswitch
+switch (e)
+case (1)
+:res += " одно";
+case (2)
+:res += " два";
+case (3)
+:res += " три";
+case (4)
+:res += " четыре";
+case (5)
+:res += " пять";
+case (6)
+:res += " шесть";
+case (7)
+:res += " семь";
+case (8)
+:res += " восемь";
+case (9)
+:res += " девять";
+endswitch
+endif
+if (N % 10 == 1 && N != 11) then (да)
+:res += " учебное задание";
+else (нет)
+:res += " учебных заданий";
+endif
+:**Вывод** rez;
+stop
+@enduml

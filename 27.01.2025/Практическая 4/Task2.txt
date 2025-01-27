@@ -1,0 +1,44 @@
+@startuml
+:ввод e;
+:ввод d;
+:vd = v / 10;
+:ve = v % 10;
+switch (vd)
+case (2)
+:rez = "Двадцать ";
+case (3)
+:rez = "Тридцать ";
+case (4)
+:rez = "Сорок ";
+case (5)
+:rez = "Пятьдесят ";
+case (6)
+:rez = "Шестьдесят ";
+endswitch
+if (ve == 0) then (да)
+:rez = rez + "лет";
+else (нет)
+switch (ve)
+case (1)
+:rez=rez+"один год";
+case (2)
+:rez=rez+"два года";
+case (3)
+:rez=rez+"три года";
+case (4)
+:rez=rez+"четыре года";
+case (5)
+:rez=rez+"пять лет";
+case (6)
+:rez=rez+"шесть лет";
+case (7)
+:rez=rez+"семь лет";
+case (8)
+:rez=rez+"восемь лет";
+case (9)
+:rez=rez+"девять лет";
+endswitch
+:**вывод** rez;
+endif
+stop
+@enduml

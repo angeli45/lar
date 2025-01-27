@@ -1,0 +1,20 @@
+@startuml
+:ввод E;
+:a=0, b=0, v=0, d=0, g=0, e=0;
+while(i = 1; i <= E; i++)is(да)
+:a = a + 1.0 / pow(i, 8);
+:b=b+1.0/(i*(i+1));
+:d=d+pow(-1,i+1)/(i*(i+1)*(i+2));
+endwhile
+while(i=0;i<=E; i++)is(да)
+:t=1;
+while(j=1; j<=i; j++)is(да)
+:t=t*j;
+endwhile
+:v=v+pow(-1,i)/t;
+:g=g+pow(-2,i)/t;
+:e = e + (1 / (pow(4, i) + pow(5, i)));
+endwhile
+:вывод a, b, v, g, d, e;
+stop
+@enduml

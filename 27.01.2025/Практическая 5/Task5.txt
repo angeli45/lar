@@ -1,0 +1,17 @@
+@startuml
+:ввод k;
+:u, v = 0;
+:u1=1, u2=0;
+:v1=1, v2=1;
+:r=1;
+while(i=3;i<=n;i++)is(да)
+:u = u2 - u1 * v2 - v1 / (1 + pow(u2, 2) + pow(v2, 2));
+:v = u2 - v2 / (Math.abs(u1 + v2) + 2);
+:u1 = u2;
+:u2 = u;
+:v1 = v2;
+:v2 = v;
+endwhile
+:вывод v;
+stop
+@enduml

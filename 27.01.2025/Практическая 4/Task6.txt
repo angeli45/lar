@@ -1,0 +1,10 @@
+@startuml
+start
+:**ввод** n;
+if(n%5==0) then (да)
+:**Вывод** true;
+else (нет)
+:**Вывод** false;
+endif
+stop
+@enduml

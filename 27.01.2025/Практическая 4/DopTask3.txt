@@ -1,0 +1,12 @@
+@startuml
+start
+:**ввод** a;
+:**ввод** b;
+while (n!=0) is (да)
+:Nod=b;
+:b=a%b;
+:a=Nod;
+endwhile
+:**Вывод** a;
+stop
+@enduml

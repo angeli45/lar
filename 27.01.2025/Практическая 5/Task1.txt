@@ -1,0 +1,16 @@
+@startuml
+:ввод x;
+:min=0;
+while(i=0;i<n;i++)is(да)
+:ввод m;
+if(m%3==0 && m<min)then(да)
+:min=m;
+endif
+endwhile
+if(min!=0)
+:вывод min;
+else (нет)
+:Чисел оканчивающихся на 3 нет;
+endif
+stop
+@enduml

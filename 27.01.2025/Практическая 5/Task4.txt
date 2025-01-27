@@ -1,0 +1,18 @@
+@startuml
+:ввод n;
+:ввод z;
+:r=0;
+while(i=1;i<=n;i++)is(да)
+:t=1;
+while (j = 1; j <= i; j++)
+:t=t*j;
+endwhile
+:r=r+pow(x,i)/t;
+endwhile
+if(r!=0)
+:вывод r;
+else (нет)
+:вывод Ошибка;
+endif
+stop
+@enduml
